@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Organizational Systems | Apex Command Systems</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    .hero-custom {
+      background: var(--navy);
+      color: white;
+      padding: 100px 24px 60px;
+      text-align: center;
+    }
+    .hero-custom .eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .hero-custom h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+    .hero-custom p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 640px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .content-section {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .content-section h2 {
+      font-size: 1.6rem;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+    .content-section p {
+      color: #444;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .examples-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin: 40px 0;
+    }
+    .example-card {
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 24px;
+    }
+    .example-card h3 {
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .example-card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+    }
+    .pricing-block {
+      background: var(--navy);
+      color: white;
+      border-radius: 6px;
+      padding: 40px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .pricing-block .price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin: 12px 0;
+    }
+    .pricing-block .price-note {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+    }
+    .process-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: steps;
+    }
+    .process-list li {
+      counter-increment: steps;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    .process-list li::before {
+      content: counter(steps);
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.85rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .process-list li div strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .process-list li div span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .cta-section {
+      background: #f5f5f0;
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: 1.8rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      color: #555;
+      margin-bottom: 32px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div>
+    <a href="/" class="nav-logo">Apex <span>Command</span> Systems</a>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#methodology">The Method</a>
+    <a href="/services.html">Services</a>
+    <a href="/custom-build.html" style="color: var(--gold);">Custom Builds</a>
+    <a href="/about.html">About</a>
+    <a href="https://solomonapex.com/wealth-builder.html" target="_blank">Newsletter</a>
+    <a href="/assessment.html" class="nav-cta">Get Your AI Readiness Score</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="hero-custom">
+  <div class="eyebrow">Custom Organizational Systems</div>
+  <h1>Built for Your Organization.<br>Not Anyone Else's.</h1>
+  <p>Some organizations need more than a retainer. They need a custom-built operational system designed around how they actually work. That is what we build.</p>
+</div>
+
+<div class="content-section">
+  <h2>What This Is</h2>
+  <p>A custom organizational system build is a from-scratch engagement where we design, build, and deploy a purpose-built operational platform for your organization. Not a template. Not an off-the-shelf tool. A system that reflects your workflows, your team, your data, and your mission.</p>
+  <p>These projects typically involve integrated intake forms, automated workflows, staff-facing dashboards, data management, and AI-powered operations layers — all connected into a single working system your team can actually use.</p>
+
+  <h2>Examples of What We Build</h2>
+  <div class="examples-grid">
+    <div class="example-card">
+      <h3>Event Operations Systems</h3>
+      <p>Unified intake, day-of staff dashboards, kitchen and bar management, vendor communications, and post-event reporting — all connected.</p>
+    </div>
+    <div class="example-card">
+      <h3>Church Community Platforms</h3>
+      <p>Member resource exchanges, emergency mobilization tools, volunteer coordination systems, and community databases.</p>
+    </div>
+    <div class="example-card">
+      <h3>Client Management Systems</h3>
+      <p>Lead intake, automated follow-up sequences, CRM integration, booking workflows, and reporting dashboards for service-based organizations.</p>
+    </div>
+    <div class="example-card">
+      <h3>AI Operations Infrastructure</h3>
+      <p>Agent-based systems that automate research, reporting, communications, and operational tasks across your organization.</p>
+    </div>
+  </div>
+
+  <div class="pricing-block">
+    <div class="eyebrow" style="color: var(--gold); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px;">Investment</div>
+    <div class="price">Starting at $2,500</div>
+    <div class="price-note">Final pricing is determined after a scoping session. Complex builds are quoted based on scope, timeline, and required integrations.</div>
+    <a href="mailto:jeff@apexcommandsystems.com" class="btn-primary">Request a Scoping Session</a>
+  </div>
+
+  <h2>How It Works</h2>
+  <ol class="process-list">
+    <li>
+      <div>
+        <strong>Discovery Call</strong>
+        <span>We map your current workflows, pain points, and what you need the system to do. No charge for this conversation.</span>
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Scoping & Proposal</strong>
+        <span>We deliver a clear scope of work with a fixed price. No surprises.</span>
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Build</strong>
+        <span>We build it. You review it. We refine until it works exactly the way your organization needs it to.</span>
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Deploy & Train</strong>
+        <span>We deploy the system, document how it works, and train your team so they can operate it independently.</span>
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Ongoing Support</strong>
+        <span>Optional retainer for ongoing maintenance, updates, and expansion as your needs grow.</span>
+      </div>
+    </li>
+  </ol>
+</div>
+
+<div class="cta-section">
+  <h2>Tell Us What You Need to Build</h2>
+  <p>Every custom project starts with a conversation. No pitch. Just an honest look at what you need and whether we are the right fit to build it.</p>
+  <a href="mailto:jeff@apexcommandsystems.com" class="btn-primary">Start the Conversation</a>
+</div>
+
+<footer style="background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 32px 24px; font-size: 0.8rem;">
+  &copy; 2026 Apex Command Systems | 5th & Lake LLC &nbsp;|&nbsp; jeff@apexcommandsystems.com
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+</script>
+</body>
+</html>
